@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Bg Changes</title>
+  <style>
+    body{
+      height: 100vh;
+    }
+    .bg-background{
+      background: #000000;
+    }
+  </style>
+</head>
+<body class="bg-color">
+  <input type="text" name="bg" id="bg-name"><br>
+  <button class="bg-change" onclick="changeBgBtn()">Click Me</button>
+
+  <p></p>
+</body>
+<script>
+  const changeBgBtn = () => {
+    const bodyTag = document.querySelector('.bg-color');
+    const bdyBg = document.getElementById('bg-name').value;
+    const lowerCase = bdyBg.toLowerCase();
+      bodyTag.style.color = lowerCase;
+  }
+
+</script>
+</html>
