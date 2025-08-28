@@ -14,7 +14,7 @@
   <style>
     p {
       font-family: 'Roboto', Arial, sans-serif;
-      margin: 0;
+      margin-top: 0;
     }
     .thumbnail {
       width: 300px;
@@ -44,7 +44,7 @@
       margin-bottom: 4px;
     }
     .video-title {
-      margin: 0;
+      margin-top: 0;
       font-size: 14px;
       font-weight: bold;
       line-height: 20px;
@@ -52,22 +52,19 @@
       cursor: pointer;
     }
 
-    .channel-picture {
-      display: inline-block;
-      width: 50px;
-      vertical-align: top;
-      background-color: gray;
+    .video-info-grid {
+      display: grid;
+      grid-template-columns: 50px 1fr;
     }
 
     .video-info {
-      display: inline-block;
-      width: 230px;
-      background-color: gray;
+      padding-left: 7px;
     }
 
     .profile-pic{
       width: 100%;
       border-radius: 40px;
+      
     }
 
     .thumbnail-row{
@@ -85,7 +82,7 @@
     <div class="thumbnail-row">
       <img src="assets/thumbnails/thumbnail-1.webp" alt="thumbnail-1" class="thumbnail">
     </div>
-    <div>
+    <div class="video-info-grid">
       <div class="channel-picture">
         <img class="profile-pic" src="assets/channel-pic/channel-1.jpeg" alt="Channel-1-profile">
       </div>
@@ -106,7 +103,7 @@
     <div class="thumbnail-row">
       <img src="assets/thumbnails/thumbnail-2.webp" alt="thumbnail-2" class="thumbnail">
     </div>
-    <div>
+    <div  class="video-info-grid">
       <div class="channel-picture">
         <img src="assets/channel-pic/channel-2.jpeg" class="profile-pic" alt="Channel-2-profile">
       </div>
