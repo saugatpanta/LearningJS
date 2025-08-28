@@ -22,9 +22,9 @@
 <script>
   const changeBgBtn = () => {
     const bodyTag = document.querySelector('.bg-color');
-    const bdyBg = document.getElementById('bg-name').value;
-    const lowerCase = bdyBg.toLowerCase();
-      bodyTag.style.color = lowerCase;
+    const bdyBg = document.querySelector('#bg-name');
+    const lowerCase = bdyBg.value.toLowerCase();
+      bodyTag.style.background = lowerCase;
   }
 
 </script>

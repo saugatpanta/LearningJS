@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .output{
+      display: block;
+    }
+  </style>
+</head>
+<body class="mainBody">
+  <input type="text" id="inputBox"><br>
+  <button onclick="todoListClick()">Add</button>
+  <div class="output"></div>
+</body>
+<script>
+  const todoListClick = () => {
+    const data = document.querySelector('#inputBox').value;
+    const elem = document.createElement('p');
+    const output = document.querySelector('.output');
+    console.log(typeof elem);
+    elem.innerText = data;
+    output.appendChild(elem);
+  }
+</script>
+</html>
