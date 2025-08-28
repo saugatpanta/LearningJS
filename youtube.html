@@ -3,16 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Cinzel:wght@400..900&family=Noto+Sans+Devanagari:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title>Youtube Clone</title>
   <style>
+    p {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+    }
     .thumbnail {
       width: 300px;
       display: block;
     }
 
     #search-bar {
+      display: block;
       font-size: 20px;
       font-weight: bold;
       
@@ -20,39 +30,96 @@
 
     .video-preview{
       width: 300px;
-    }
-
-    .video-title{
-      width: 300px;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 15px;
+      margin-top: 15px;
     }
     
-    .video-author, .video-stats {
-      display: block;
+    .video-author , .video-stats{
+      font-size: 12px;
+      color: rgb(96,96,96);
+    }
+    .video-author{
+      margin-bottom: 4px;
+    }
+    .video-title {
+      margin: 0;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 20px;
+      margin-bottom: 15px;
+      cursor: pointer;
     }
 
-    .div-example{
+    .channel-picture {
       display: inline-block;
-      padding: 10px 20px;
-      background-color: aqua;
+      width: 50px;
+      vertical-align: top;
+      background-color: gray;
     }
+
+    .video-info {
+      display: inline-block;
+      width: 230px;
+      background-color: gray;
+    }
+
+    .profile-pic{
+      width: 100%;
+      border-radius: 40px;
+    }
+
+    .thumbnail-row{
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+
   </style>
 </head>
 <body>
   <input type="text" id="search-bar" placeholder="Search">
-  <button><i class="fa fa-search"></i></button>
   
   <div class="video-preview">
-    <img src="assets/thumbnails/thumbnail-1.webp" alt="thumbnail-1" class="thumbnail"><br>
+    <div class="thumbnail-row">
+      <img src="assets/thumbnails/thumbnail-1.webp" alt="thumbnail-1" class="thumbnail">
+    </div>
+    <div>
+      <div class="channel-picture">
+        <img class="profile-pic" src="assets/channel-pic/channel-1.jpeg" alt="Channel-1-profile">
+      </div>
+      <div class="video-info">
+        <p class="video-title">
+        Talking Tech and AI with Google CEO Sundar Pichai!</p>
+        <p class="video-author">Marques Brownlee</p>
+        <p class="video-stats" >3.4M views &#183; 6 months ago</p>
+      </div>
+      
+    </div>
+  </div>
+    
   
-    <p class="video-title">
-      Talking Tech and <strong>AI with Google</strong> CEO Sundar Pichai!</p>
-    <p class="video-author">Marques Brownlee</p>
-    <p class="video-stats" >3.4M views &#183; 6 months ago</p>
+    
+
+  <div class="video-preview">
+    <div class="thumbnail-row">
+      <img src="assets/thumbnails/thumbnail-2.webp" alt="thumbnail-2" class="thumbnail">
+    </div>
+    <div>
+      <div class="channel-picture">
+        <img src="assets/channel-pic/channel-2.jpeg" class="profile-pic" alt="Channel-2-profile">
+      </div>
+      <div class="video-info">
+        <p class="video-title">
+        Try Not To Laugh Challenge #9</p>    
+        <p class="video-author">Markiplier</p>
+        <p class="video-stats" >19M views &#183; 4 years ago</p>
+      </div>
+    </div>
+    
   </div>
 
-<div class="div-example">
-  this is a div createElement.
-</div>
 
 </body>
 </html>
